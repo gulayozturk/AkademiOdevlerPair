@@ -1,0 +1,703 @@
+{
+	"info": {
+		"_postman_id": "2e9faaa9-2a15-4511-9821-373a433633c3",
+		"name": "Pair4-CRM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25281739"
+	},
+	"item": [
+		{
+			"name": "Add Customer",
+			"item": [
+				{
+					"name": "Add Customer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with birth date-string",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with existing nationalty ıd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with no nationalty ıd",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": \"\",\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with no phone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with no email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with no first name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with first name-number",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"1\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275698349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with first name-smbol",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"!\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 94276558349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}\r\n//first name-smbol girilebiliyor.",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with no last name",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with  last name-number",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"9\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 82275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with  last name-smbol",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"&\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84075678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with no gender",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"1993-01-11\",\r\n  \"genderId\": \"0\",\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Customer with no birth date",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Gülay\",\r\n  \"middleName\": \"\",\r\n  \"lastName\": \"Öztürk\",\r\n  \"birthDate\": \"\",\r\n  \"genderId\": 2,\r\n  \"motherName\": \"string\",\r\n  \"fatherName\": \"string\",\r\n  \"nationalId\": 84275678349,\r\n  \"subCreateAddressRequest\": {\r\n    \"cityName\": \"istanbul\",\r\n    \"streetName\": \"fatih\",\r\n    \"buildingName\": \"bahar\",\r\n    \"addressDescription\": \"home\",\r\n    \"countryName\": \"türkiye\"\r\n  },\r\n  \"subCreateContactMediumRequest\": {\r\n    \"pstn\": \"string\",\r\n    \"fax\": \"string\",\r\n    \"gsmNumber\": \"05055550055\",\r\n    \"email\": \"deneme@etiya.com\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/individuals/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"individuals",
+								"add"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Address",
+			"item": [
+				{
+					"name": "Address Info Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"addressId\": 281,\r\n  \"cityName\": \"izmir\",\r\n  \"streetName\": \"çiçek\",\r\n  \"buildingName\": \"gül\",\r\n  \"addressDescription\": \"home\",\r\n  \"countryName\": \"türkiye\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/addresses/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"addresses",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Address Info Delete",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"addressId\": 325\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/addresses/delete",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"addresses",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Address Info with no city name",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"addressId\": 281,\r\n  \"cityName\": \"\",\r\n  \"streetName\": \"çiçek\",\r\n  \"buildingName\": \"gül\",\r\n  \"addressDescription\": \"home\",\r\n  \"countryName\": \"türkiye\"\r\n}\r\n//Hata : Address info da city name boş bırakılırsa adres güncellemesi oluyor.",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/addresses/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"addresses",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Address Info with no street",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"addressId\": 281,\r\n  \"cityName\": \"izmir\",\r\n  \"streetName\": \"\",\r\n  \"buildingName\": \"gül\",\r\n  \"addressDescription\": \"home\",\r\n  \"countryName\": \"türkiye\"\r\n}\r\n//Hata : Street boş bırakılırsa adres güncelleniyor.",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/addresses/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"addresses",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Address Info with no building name",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"addressId\": 281,\r\n  \"cityName\": \"izmir\",\r\n  \"streetName\": \"çiçek\",\r\n  \"buildingName\": \"\",\r\n  \"addressDescription\": \"home\",\r\n  \"countryName\": \"türkiye\"\r\n}\r\n// Hata : Building name boş bırakılırsa adres güncelleniyor.",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/addresses/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"addresses",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Address Info Update with no address description",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"addressId\": 281,\r\n  \"cityName\": \"izmir\",\r\n  \"streetName\": \"çiçek\",\r\n  \"buildingName\": \"gül\",\r\n  \"addressDescription\": \"\",\r\n  \"countryName\": \"türkiye\"\r\n}\r\n// Hata : Adres tanımı boş bırakılırsa adres güncelleniyor.",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/addresses/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"addresses",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contact Medium",
+			"item": [
+				{
+					"name": "Contact Medium update/ekleme yapılacaktır.",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"partyId\": 624,\r\n  \"pstn\": \"02125423030\",\r\n  \"fax\": \"string\",\r\n  \"gsmNumber\": \"05363004040\",\r\n  \"email\": \"deneme@etiya.com\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/contact-mediums/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"contact-mediums",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
